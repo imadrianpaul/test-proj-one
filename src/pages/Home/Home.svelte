@@ -1,6 +1,6 @@
 
 <script>
-    import LoginOverlay from './pages/Login/LoginOverlay.svelte';
+    import LoginOverlay from "../Login/LoginOverlay.svelte";
     let showLogin = false;
 
     function toggleLogin() {

@@ -1,6 +1,5 @@
-<!-- src/lib/login/LoginOverlay.svelte -->
 <script>
-    import LoginForm from '../Login/LoginForm.svelte';
+    import LoginForm from "./LoginForm.svelte";
     export let isVisible = false;
 
     function close() {
@@ -8,8 +7,14 @@
     }
 </script>
 
+<style src="./Login.css"></style>
+
 {#if isVisible}
 <div class="overlay">
-    <LoginForm close={close} />
+
+        <LoginForm close={close} />
+
 </div>
 {/if}
+
+
