@@ -1,0 +1,10 @@
+
+
+:root {
+    --text-color: rgba(10, 10, 10, 0.25);
+    --title-color: rgba(210, 176, 41, 0.724);
+    --desc-color: rgba(192, 192, 192, 0.906);
+    --border-color: rgb(230, 230, 230);
+    --button-color: rgba(210, 176, 41, 0.724);
+
+}
