@@ -1,23 +1,13 @@
 
 <script>
-    import LoginOverlay from "../Login/LoginOverlay.svelte";
-    let showLogin = false;
 
-    function toggleLogin() {
-        showLogin = !showLogin;
-    }
 </script>
 
 <div class="home-container">
     <div>
-        <h1>uParcel</h1>
         <p>Your easiest way to deliver</p>
-        <button on:click={toggleLogin}>Login</button>
     </div>
 </div>
-
-
-<LoginOverlay isVisible={showLogin} />
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
@@ -27,7 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 10vh;
         background-image: url('../assets/pexels-gaho-chen-2766129-10583179.jpg');
         background-size: cover;
         background-position: center;

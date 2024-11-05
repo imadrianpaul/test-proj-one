@@ -3,7 +3,7 @@
 
     function handleSubmit(event) {
         event.preventDefault();
-        close(); // Close overlay after submission
+        close();
     }
 </script>
 
@@ -12,24 +12,21 @@
     <h3>Enter the following to Log-in to uParcel</h3>
     <div class="separator"></div>
 
-    <div class="content-form" on:submit|preventDefault={handleSubmit}>
+    <form class="content-form" on:submit={handleSubmit}>
         <div class="email">
-            <label for="emailadd"></label>
             <input type="text" id="emailadd" placeholder="Email address" required />
         </div>
         <div class="pword">
-            <label for="password"></label>
             <input type="password" id="password" placeholder="Password" required />
         </div>
         <button class="button-1" type="submit">Login Now</button>
-        <h3> 
+        <h3>
             <a href="/forgotpassword" class="forgot-pass">Forgot Password?</a>
         </h3>
         <h3> Don't have an account?
-            <a href="/register" class="register-link">Register</a>
-            now.
+            <a href="/register" class="register-link">Register</a> now.
         </h3>
-    </div>
+    </form>
 </div>
 
 <style>
